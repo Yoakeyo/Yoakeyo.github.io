@@ -5,7 +5,7 @@
 
 ### [我的 Github 主页](https://github.com/yoakeyo)  
 #### [我的笔记](https://github.com/Yoakeyo/notes)  
-  学习时做的笔记，不定期会重新上传，有些内容和细节随时会补充更
+  学习时做的笔记，不定期会重新上传，有些内容和细节随时会补充更新  
   里面也包含了一些包括轮播图之类的轮子
 #### [学生信息管理系统(Python WEB版)](https://github.com/Yoakeyo/StuIMS)  
   
