@@ -1,0 +1,891 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic page needs -->
+  <meta charset="utf-8">
+  <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <![endif]-->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>商品详情页</title>
+  <meta name="description" content="">
+
+  <!-- Mobile specific metas  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon  -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700' rel='stylesheet'
+    type='text/css'>
+
+  <!-- CSS Style -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!-- font-awesome & simple line icons CSS -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css" media="all">
+
+  <!-- owl.carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+
+  <!-- animate CSS  -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css" media="all">
+
+  <!-- flexslider CSS -->
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+  <!-- jquery-ui.min CSS  -->
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+
+  <!-- Mean Menu CSS -->
+  <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css">
+
+  <!-- nivo-slider css -->
+  <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+
+  <!-- style CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+</head>
+
+<body class="product-page">
+
+
+
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div id="page">
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="header-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-5 col-xs-6">
+                <!-- Default Welcome Message -->
+                <span class="phone hidden-xs hidden-sm"><i class="fa fa-phone fa-lg"></i> +123.456.789</span>
+                <div class="welcome-msg hidden-xs">欢迎来到我的商城</div>
+
+              </div>
+
+              <!-- top links -->
+              <div class="headerlinkmenu col-lg-6 col-md-6 col-sm-7 col-xs-6 text-right">
+                <div class="links">
+                  <div class="jtv-user-info">
+                    <div class="dropdown"> <a class="current-open" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" href="#"><span>我的账号</span> <i class="fa fa-angle-down"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">账户</a></li>
+                        <li><a href="#">心愿单</a></li>
+                        <li><a href="#">结账</a></li>
+                        <!-- 分割线 -->
+                        <li class="divider"></li>
+                        <li><a href="#">登录</a></li>
+                        <li><a href="#">注册</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-xs-12">
+              <!-- Header Logo -->
+              <div class="logo"><a title="e-commerce" href="index.html"><img alt="e-commerce" src="images/logo.png"></a>
+              </div>
+              <!-- 结束 Header Logo -->
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+              <!-- 搜索 -->
+              <div class="top-search">
+                <div id="search">
+                  <form>
+                    <div class="input-group">
+                      <select class="cate-dropdown hidden-xs hidden-sm" name="category_id">
+                        <option>所有类别</option>
+                        <option>女士</option>
+                        <option>男士</option>
+                      </select>
+                      <input type="text" class="form-control" placeholder="请输入关键字" name="search">
+                      <button class="btn-search" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- 搜索结束 -->
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-12 top-cart">
+
+              <!-- 购物车 -->
+              <div class="top-cart-contain">
+                <div class="mini-cart">
+                  <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle">
+                    <a href="#">
+                      <div class="cart-icon"><i class="fa fa-shopping-cart" onclick="location.href='shopping_cart.html'"></i></div>
+                      <div class="shoppingcart-inner">
+                        <span class="cart-title">购物车</span>
+                        <span class="cart-total">4 件商品：¥520.00</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <div class="top-cart-content">
+                      <div class="block-subtitle hidden-xs">最近添加的商品</div>
+                      <ul id="cart-sidebar" class="mini-products-list">
+                        <li class="item odd">
+                          <a href="#" title="产品" class="product-image"><img src="images/products/img07.jpg"
+                              alt="Lorem ipsum dolor" width="65"></a>
+                          <div class="product-details">
+                            <a href="#" title="移除此商品" class="remove-cart"><i class="icon-close"></i></a>
+                            <p class="product-name"><a href="#">商品1</a> </p>
+                            <strong>1</strong> x <span class="price">¥20.00</span>
+                          </div>
+                        </li>
+                        <li class="item even">
+                          <a href="#" title="产品" class="product-image"><img src="images/products/img08.jpg"
+                              alt="Lorem ipsum dolor" width="65"></a>
+                          <div class="product-details">
+                            <a href="#" title="移除此商品" class="remove-cart"><i class="icon-close"></i></a>
+                            <p class="product-name"><a href="#">商品2</a> </p>
+                            <strong>1</strong> x <span class="price">¥230.00</span>
+                          </div>
+                        </li>
+                        <li class="item last odd">
+                          <a href="#" title="产品" class="product-image"><img src="images/products/img10.jpg"
+                              alt="Lorem ipsum dolor" width="65"></a>
+                          <div class="product-details">
+                            <a href="#" title="移除此商品" class="remove-cart"><i class="icon-close"></i></a>
+                            <p class="product-name"><a href="#">商品3</a> </p>
+                            <strong>2</strong> x <span class="price">¥420.00</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="top-subtotal">小计：<span class="price">¥520.00</span></div>
+                      <div class="actions">
+                        <button onclick="location.href='#'" class="btn-checkout" type="button"><i
+                            class="fa fa-check"></i><span>去结账</span></button>
+                        <button onclick="location.href='shopping_cart.html'" class="view-cart" type="button"><i
+                            class="fa fa-shopping-cart"></i> <span>查看购物车</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </header>
+    <!-- 结束 header -->
+
+    <!-- 开始 Menu Area -->
+    <div class="menu-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 hidden-xs">
+            <div class="main-menu">
+              <nav>
+                <!-- 定义一个无序列表 -->
+                <ul>
+
+                  <!-- 列表项：主页 -->
+                  <li class="active custom-menu"><a href="index.html">主页</a>
+                  </li>
+
+                  <!-- 列表项：男装 -->
+                  <li class="megamenu"><a href="#">男装</a>
+
+                    <!-- 列表项下拉菜单：男装分类 -->
+                    <div class="mega-menu">
+                      <span>
+                        <!-- 男装分类：服装 -->
+                        <a class="mega-title" href="#">服装 </a>
+                        <a href="#">休闲衬衫</a>
+                        <a href="#">裤子</a>
+                        <a href="#">西装 & 西装外套 </a>
+                        <a href="#">运动服 </a>
+                      </span>
+                      <span>
+                        <!-- 男装分类：鞋子 -->
+                        <a class="mega-title" href="#">鞋子 </a>
+                        <a href="#">运动 & 户外</a>
+                        <a href="#">慢跑鞋</a>
+                        <a href="#">运动鞋 </a>
+                        <a href="#">正式鞋 </a>
+                      </span>
+                      <!-- 男装分类：配饰 -->
+                      <span>
+                        <a class="mega-title" href="#">配饰 </a>
+                        <a href="#">手提包</a>
+                        <a href="#">太阳镜</a>
+                        <a href="#">钱包 </a>
+                        <a href="#">背包 </a>
+                      </span>
+
+                    </div>
+                  </li>
+
+                  <!-- 列表项：女装 -->
+                  <li class="megamenu"><a href="#">女装</a>
+
+                    <!-- 列表项下拉菜单：女装分类 -->
+                    <div class="mega-menu">
+
+                      <!-- 女装分类：服装 -->
+                      <span class="mega-menu-img left hidden-sm">
+                        <a href="#"><img src="images/menu-img2.jpg" alt="Bannar 2"></a>
+                      </span>
+                      <span>
+                        <a class="mega-title" href="#">服装 </a>
+                        <a href="#">休闲衬衫</a>
+                        <a href="#">裤子</a>
+                        <a href="#">西装 & 西装外套 </a>
+                        <a href="#">运动服 </a>
+                      </span>
+
+                      <!-- 女装分类：珠宝 -->
+                      <span>
+                        <a class="mega-title" href="#">珠宝 </a>
+                        <a href="#">金</a>
+                        <a href="#">铂金</a>
+                        <a href="#">戒指 </a>
+                        <a href="#">项链 </a>
+                      </span>
+
+                      <!-- 女装分类：鞋子 -->
+                      <span>
+                        <a class="mega-title" href="#">鞋子 </a>
+                        <a href="#">运动 & 户外</a>
+                        <a href="#">慢跑鞋</a>
+                        <a href="#">运动鞋 </a>
+                        <a href="#">正式鞋 </a>
+                      </span>
+
+
+                      <!-- 女装分类：配饰 -->
+                      <span>
+                        <a class="mega-title" href="#">配饰 </a>
+                        <a href="#">手提包</a>
+                        <a href="#">太阳镜</a>
+                        <a href="#">钱包 </a>
+                        <a href="#">背包 </a>
+                      </span>
+
+                    </div>
+                  </li>
+                  <li><a href="#">联系我</a></li>
+                </ul>
+              </nav>
+              <!-- Signup -->
+              <p class="top-Signup"><a href="#" class="" role="button" data-toggle="modal"
+                  data-target="#login-modal">登录/注册</a></p>
+              <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true"
+                style="display: none;">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header"> <img id="img_logo" src="images/logo.png" alt="logo">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                          class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+                    </div>
+                    <div id="div-forms">
+                      <form id="login-form">
+                        <div class="modal-body">
+                          <div id="div-login-msg"> <span id="text-login-msg">用户名或电子邮件地址 </span> </div>
+                          <input id="login_username" class="form-control" type="text" placeholder="用户名" required>
+                          <input id="login_password" class="form-control" type="password" placeholder="密码" required>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                              记住我 </label>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <div>
+                            <button type="submit" class="btn-login">登录</button>
+                          </div>
+                          <div>
+                            <button onclick="location.href='#'" id="login_register_btn" type="button"
+                              class="btn btn-link">注册</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 结束 # MODAL LOGIN -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 结束 Menu Area -->
+
+    <!-- 开始 Mobile Menu -->
+    <div class="mobile-menu hidden-sm hidden-md hidden-lg">
+      <nav><span class="mobile-menu-title">菜单</span>
+        <ul>
+          <li class=""><a href="index.html">首页</a>
+          </li>
+          <li class=""><a href="#">女装</a>
+          <li class=""><a href="#">男装</a>
+        </ul>
+        </li>
+      </nav>
+    </div>
+    <!-- 结束 Mobile Menu -->
+
+    <!-- Breadcrumbs -->
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul>
+              <li class="home"> <a title="Go to Home Page" href="index.html">主页</a><span>&raquo;</span></li>
+              <li><strong>商品详情页</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Breadcrumbs End -->
+    <!-- Main Container -->
+    <div class="main-container col1-layout">
+      <div class="container">
+        <div class="row">
+          <div class="col-main">
+            <div class="product-view-area">
+              <div class="product-big-image col-xs-12 col-sm-5 col-lg-5 col-md-5">
+                <div class="icon-sale-label sale-left">商品</div>
+                <div class="large-image"> <a href="images/products/img03.jpg" class="cloud-zoom" id="zoom1"
+                    rel="useWrapper: false, adjustY:0, adjustX:20"> <img class="zoom-img"
+                      src="images/products/img03.jpg" alt="products"> </a> </div>
+                <div class="flexslider flexslider-thumb">
+                  <ul class="previews-list slides">
+                    <li><a href='images/products/img01.jpg' class='cloud-zoom-gallery'
+                        rel="useZoom: 'zoom1', smallImage: 'images/products/img01.jpg' "><img
+                          src="images/products/img01.jpg" alt="Thumbnail 2" /></a></li>
+                    <li><a href='images/products/img07.jpg' class='cloud-zoom-gallery'
+                        rel="useZoom: 'zoom1', smallImage: 'images/products/img07.jpg' "><img
+                          src="images/products/img07.jpg" alt="Thumbnail 1" /></a></li>
+                    <li><a href='images/products/img02.jpg' class='cloud-zoom-gallery'
+                        rel="useZoom: 'zoom1', smallImage: 'images/products/img02.jpg' "><img
+                          src="images/products/img02.jpg" alt="Thumbnail 1" /></a></li>
+                    <li><a href='images/products/img03.jpg' class='cloud-zoom-gallery'
+                        rel="useZoom: 'zoom1', smallImage: 'images/products/img03.jpg' "><img
+                          src="images/products/img03.jpg" alt="Thumbnail 2" /></a></li>
+                    <li><a href='images/products/img04.jpg' class='cloud-zoom-gallery'
+                        rel="useZoom: 'zoom1', smallImage: 'images/products/img04.jpg' "><img
+                          src="images/products/img04.jpg" alt="Thumbnail 2" /></a></li>
+                  </ul>
+                </div>
+
+                <!-- end: more-images -->
+
+              </div>
+              <div class="col-xs-12 col-sm-7 col-lg-7 col-md-7 product-details-area">
+                <!-- 产品详情区域 -->
+                <div class="product-name">
+                  <h1>商品1</h1>
+                </div>
+                <div class="price-box">
+                  <p class="special-price"> <span class="price-label">特价</span> <span class="price"> ¥329.99 </span>
+                  </p>
+                  <p class="old-price"> <span class="price-label">原价:</span> <span class="price"> ¥359.99 </span> </p>
+                </div>
+                <div class="ratings">
+                  <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                  <p class="rating-links"> <a href="#">1 条评论</a> <span class="separator">|</span> <a href="#">发表评论</a>
+                  </p>
+                  <p class="availability in-stock pull-right">库存: <span>有货</span></p>
+                </div>
+                <div class="short-description">
+                  <h2>商品介绍</h2>
+                  <p>这里应该是一段介绍</p>
+                  <p>这里是另一段介绍</p>
+                </div>
+                <div class="product-color-size-area">
+                  <div class="color-area">
+                    <h2 class="saider-bar-title">颜色</h2>
+                    <div class="color">
+                      <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="size-area">
+                    <h2 class="saider-bar-title">尺寸</h2>
+                    <div class="size">
+                      <ul>
+                        <li><a href="#">S</a></li>
+                        <li><a href="#">L</a></li>
+                        <li><a href="#">M</a></li>
+                        <li><a href="#">XL</a></li>
+                        <li><a href="#">XXL</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-variation">
+                  <form action="#" method="post">
+                    <div class="cart-plus-minus">
+                      <label for="qty">购买数量:</label>
+                      <div class="numbers-row">
+                        <div
+                          onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 0 ) result.value--;return false;"
+                          class="dec qtybutton"><i class="fa fa-minus">&nbsp;</i></div>
+                        <input type="text" class="qty" title="Qty" value="1" maxlength="12" id="qty" name="qty">
+                        <div
+                          onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;"
+                          class="inc qtybutton"><i class="fa fa-plus">&nbsp;</i></div>
+                      </div>
+                    </div>
+                    <button class="button pro-add-to-cart" title="Add to Cart" type="button"><span><i
+                          class="fa fa-shopping-cart"></i> Add to Cart</span></button>
+                  </form>
+                </div>
+                <div class="product-cart-option">
+                  <ul>
+                    <li><a href="#"><i class="fa fa-heart"></i><span>添加进愿望单</span></a></li>
+                    <li><a href="#"><i class="fa fa-retweet"></i><span>添加到比较</span></a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i><span>通过邮箱分享给朋友</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-overview-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="product-tab-inner">
+                    <ul id="product-detail-tab" class="nav nav-tabs product-tabs">
+                      <li class="active"> <a href="#description" data-toggle="tab"> 描述 </a> </li>
+                      <li> <a href="#reviews" data-toggle="tab">评论</a> </li>
+                      <li><a href="#product_tags" data-toggle="tab">标签</a></li>
+                    </ul>
+                    <div id="productTabContent" class="tab-content">
+                      <div class="tab-pane fade in active" id="description">
+                        <div class="std">
+                          <p>商品的介绍和信息</p>
+                          <p>商品介绍2</p>
+                          <p>商品介绍3 </p>
+                        </div>
+                      </div>
+                      <div id="reviews" class="tab-pane fade">
+                        <div class="col-sm-5 col-lg-5 col-md-5">
+                          <div class="reviews-content-left">
+                            <h2>客户评论</h2>
+                            <div class="review-ratting">
+                              <p><a href="#">Amazing</a> 评价者: user1</p>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>价格</th>
+                                    <td>
+                                      <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                          class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                          class="fa fa-star-o"></i> </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>满意度</th>
+                                    <td>
+                                      <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                          class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                          class="fa fa-star-o"></i> </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>质量</th>
+                                    <td>
+                                      <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                          class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                          class="fa fa-star-o"></i> </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p class="author"> 客户1<small> (评论于 2022/12/6)</small> </p>
+                            </div>
+                            <div class="review-ratting">
+                              <p><a href="#">Amazing</a> 评价者: user1</p>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>价格</th>
+                                    <td>
+                                      <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                          class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                          class="fa fa-star-o"></i> </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>满意度</th>
+                                    <td>
+                                      <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                          class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                          class="fa fa-star-o"></i> </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>质量</th>
+                                    <td>
+                                      <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                          class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                          class="fa fa-star-o"></i> </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p class="author"> 客户1<small> (评论于 2022/12/6)</small> </p>
+                            </div>
+                            <div class="review-ratting">
+                              <p><a href="#">Amazing</a> 评价者: user1</p>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>价格</th>
+                                    <td>
+                                      <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                          class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                          class="fa fa-star-o"></i> </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>满意度</th>
+                                    <td>
+                                      <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                          class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                          class="fa fa-star-o"></i> </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>质量</th>
+                                    <td>
+                                      <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                          class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                          class="fa fa-star-o"></i> </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p class="author"> 客户1<small> (评论于 2022/12/6)</small> </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-7 col-lg-7 col-md-7">
+                          <div class="reviews-content-right">
+                            <h2>撰写自己的评论</h2>
+                            <form>
+                              <h3>您正在查看: <span>商品1</span></h3>
+                              <h4>您如何评价这款产品?<em>*</em></h4>
+                              <div class="table-responsive reviews-table">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th></th>
+                                      <th>1 星</th>
+                                      <th>2 星</th>
+                                      <th>3 星</th>
+                                      <th>4 星</th>
+                                      <th>5 星</th>
+                                    </tr>
+                                    <tr>
+                                      <td>质量</td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                      <td>价格</td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                    </tr>
+                                    <tr>
+                                      <td>满意度</td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                      <td><input type="radio"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="form-area">
+                                <div class="form-element">
+                                  <label>昵称 <em>*</em></label>
+                                  <input type="text">
+                                </div>
+                                <div class="form-element">
+                                  <label>您的评论摘要 <em>*</em></label>
+                                  <input type="text">
+                                </div>
+                                <div class="form-element">
+                                  <label>具体评论</label>
+                                  <textarea></textarea>
+                                </div>
+                                <div class="buttons-set">
+                                  <button class="button submit" title="提交审核" type="submit"><span><i
+                                        class="fa fa-thumbs-up"></i> &nbsp;查看</span></button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="product_tags">
+                        <div class="box-collateral box-tags">
+                          <div class="tags">
+                            <form id="addTagForm" action="#" method="get">
+                              <div class="form-add-tags">
+                                <div class="input-box">
+                                  <label for="productTagName">添加标签：</label>
+                                  <input class="input-text" name="productTagName" id="productTagName" type="text">
+                                  <button type="button" title="Add Tags" class="button add-tags"><i
+                                      class="fa fa-plus"></i> &nbsp;<span>添加标签</span> </button>
+                                </div>
+                                <!--input-box-->
+                              </div>
+                            </form>
+                          </div>
+                          <!--tags-->
+                          <p class="note">使用空格分隔标记。短语使用单引号（'）。</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Container End -->
+
+
+
+    <div class="bottom-service">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <div class="bottom-service-box">
+            <div class="box-outer">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <div class="service-box-center"> <span class="bottom-service-title">买2件商品</span>
+                  <div class="description">
+                    <div class="heading">免费获得1件商品！</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column">
+                <div class="service-box-center"> <span class="bottom-service-title">每日促销</span>
+                  <div class="description">
+                    <div class="heading">今日高达45%的折扣！</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column">
+                <div class="service-box-center"> <span class="bottom-service-title">新品上市</span>
+                  <div class="description">
+                    <div class="heading">高达75%的折扣</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column">
+                <div class="service-box-center"> <span class="bottom-service-title">高达45%的折扣</span>
+                  <div class="description">
+                    <div class="heading">你的第一笔购买</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <!-- 电子报订阅表单 -->
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-3">
+              <!-- 底部 logo -->
+              <div class="footer-logo"><a href="index.html"><img src="images/logo.png" alt="底部 logo"></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <h3 class="">订阅</h3>
+              <span>获取最新的优惠信息和特别优惠</span>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <!-- 订阅表单 -->
+              <form id="newsletter-validate-detail" method="post" action="#">
+                <div class="newsletter-inner">
+                  <input class="newsletter-email" name='Email' placeholder='输入您的电子邮件' />
+                  <button class="button subscribe" type="submit" title="订阅">订阅</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- 一个列表组件，包含多个链接 -->
+        <div class="row">
+          <div class="col-sm-6 col-md-3 col-xs-12 col-lg-3 collapsed-block">
+            <div class="footer-links">
+              <h3 class="links-title">信息<a class="expander visible-xs" href="#">+</a></h3>
+              <div class="tabBlock" id="TabBlock-1">
+                <ul class="list-links list-unstyled">
+                  <li><a href="#">交货信息</a></li>
+                  <li><a href="#">折扣</a></li>
+                  <li><a href="#">网站地图</a></li>
+                  <li><a href="#">隐私政策</a></li>
+                  <li><a href="#">常见问题</a></li>
+                  <li><a href="#">条款和条件</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-xs-12 col-lg-3 collapsed-block">
+            <div class="footer-links">
+              <h3 class="links-title">内部链接<a class="expander visible-xs" href="#">+</a></h3>
+              <div class="tabBlock" id="TabBlock-3">
+                <ul class="list-links list-unstyled">
+                  <li> <a href="#"> 网站地图 </a> </li>
+                  <li> <a href="#">新闻</a> </li>
+                  <li> <a href="#">趋势</a> </li>
+                  <li> <a href="#">关于我们</a> </li>
+                  <li> <a href="#">联系我们</a> </li>
+                  <li> <a href="#">我的订单</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-2 col-xs-12 col-lg-3 collapsed-block">
+            <div class="footer-links">
+              <h3 class="links-title">服务<a class="expander visible-xs" href="#">+</a></h3>
+              <div class="tabBlock" id="TabBlock-4">
+                <ul class="list-links list-unstyled">
+                  <li> <a href="#">账户</a> </li>
+                  <li> <a href="#">愿望列表</a> </li>
+                  <li> <a href="shopping_cart.html">购物车</a> </li>
+                  <li> <a href="#">退货政策</a> </li>
+                  <li> <a href="#">概况</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xs-12 col-lg-3">
+            <h3 class="links-title">联系我们</h3>
+            <div class="footer-content">
+              <div class="email"> <i class="fa fa-envelope"></i>
+                <p>799310451@qq.com</p>
+              </div>
+              <div class="phone"> <i class="fa fa-phone"></i>
+                <p>(000) 0123 456 789</p>
+              </div>
+              <div class="address"> <i class="fa fa-map-marker"></i>
+                <p> 地址:兴义民族师范学院笔山二栋1403 </p>
+              </div>
+            </div>
+            <div class="social">
+              <ul class="inline-mode">
+                <li class="social-network fb"><a title="在Facebook上连接我们" target="_blank" href="#"><i
+                      class="fa fa-facebook"></i></a></li>
+                <li class="social-network googleplus"><a title="在Google+上连接我们" target="_blank" href="#"><i
+                      class="fa fa-google-plus"></i></a></li>
+                <li class="social-network tw"><a title="在Twitter上连接我们" target="_blank" href="#"><i
+                      class="fa fa-twitter"></i></a></li>
+                <li class="social-network linkedin"><a title="在Linkedin上连接我们" target="_blank" href="#"><i
+                      class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-coppyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 coppyright">大作业 &copy; 2022年12月完成.
+            </div>
+          </div>
+        </div>
+    </footer>
+    <a href="#" class="totop"> </a>
+  </div>
+
+  <!-- End Footer -->
+
+  <!-- JS -->
+
+  <!-- jquery js -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- Mean Menu js -->
+  <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
+
+  <!-- owl.carousel.min js -->
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+  <!-- bxslider js -->
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+
+  <!--jquery-ui.min js -->
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+
+  <!-- countdown js -->
+  <script type="text/javascript" src="js/countdown.js"></script>
+
+  <!-- wow JS -->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+
+  <!--cloud-zoom js -->
+  <script type="text/javascript" src="js/cloud-zoom.js"></script>
+
+  <!-- main js -->
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <!-- nivo slider js -->
+  <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+  <!-- flexslider js -->
+  <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
+
+
+</body>
+
+</html>

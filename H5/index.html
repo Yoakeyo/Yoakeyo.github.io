@@ -1,0 +1,1781 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic page needs -->
+  <meta charset="utf-8">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>我的商城 HTML5 &amp; PHP 大作业</title>
+  <meta name="description" content="">
+
+  <!-- Mobile specific metas  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon  -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700' rel='stylesheet'
+    type='text/css'>
+
+  <!-- CSS Style -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!-- font-awesome & simple line icons CSS -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css" media="all">
+
+  <!-- owl.carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+
+  <!-- animate CSS  -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css" media="all">
+
+  <!-- flexslider CSS -->
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+  <!-- jquery-ui.min CSS  -->
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+
+  <!-- Mean Menu CSS -->
+  <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css">
+
+  <!-- nivo-slider css -->
+  <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+
+  <!-- style CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+</head>
+
+<body class="cms-index-index cms-home-page">
+
+
+
+
+
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div id="page">
+
+
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="header-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-5 col-xs-6">
+                <!-- Default Welcome Message -->
+                <span class="phone hidden-xs hidden-sm"><i class="fa fa-phone fa-lg"></i> +123.456.789</span>
+                <div class="welcome-msg hidden-xs">欢迎来到我的商城</div>
+
+              </div>
+
+              <!-- top links -->
+              <div class="headerlinkmenu col-lg-6 col-md-6 col-sm-7 col-xs-6 text-right">
+                <div class="links">
+                  <div class="jtv-user-info">
+                    <div class="dropdown"> <a class="current-open" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" href="#"><span>我的账号</span> <i class="fa fa-angle-down"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="account_page.html">账户</a></li>
+                        <li><a href="#">心愿单</a></li>
+                        <li><a href="#">结账</a></li>
+                        <!-- 分割线 -->
+                        <li class="divider"></li>
+                        <li><a href="account_page.html">登录</a></li>
+                        <li><a href="account_page.html">注册</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-xs-12">
+              <!-- Header Logo -->
+              <div class="logo"><a title="e-commerce" href="index.html"><img alt="e-commerce" src="images/logo.png"></a>
+              </div>
+              <!-- 结束 Header Logo -->
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+              <!-- 搜索 -->
+              <div class="top-search">
+                <div id="search">
+                  <form>
+                    <div class="input-group">
+                      <select class="cate-dropdown hidden-xs hidden-sm" name="category_id">
+                        <option>所有类别</option>
+                        <option>女士</option>
+                        <option>男士</option>
+                      </select>
+                      <input type="text" class="form-control" placeholder="请输入关键字" name="search">
+                      <button class="btn-search" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- 搜索结束 -->
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-12 top-cart">
+
+              <!-- 购物车 -->
+              <div class="top-cart-contain">
+                <div class="mini-cart">
+                  <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle">
+                    <a href="#">
+                      <div class="cart-icon"><i class="fa fa-shopping-cart" onclick="location.href='shopping_cart.html'"></i></div>
+                      <div class="shoppingcart-inner">
+                        <span class="cart-title">购物车</span>
+                        <span class="cart-total">4 件商品：¥520.00</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <div class="top-cart-content">
+                      <div class="block-subtitle hidden-xs">最近添加的商品</div>
+                      <ul id="cart-sidebar" class="mini-products-list">
+                        <li class="item odd">
+                          <a href="#" title="产品" class="product-image"><img src="images/products/img07.jpg"
+                              alt="Lorem ipsum dolor" width="65"></a>
+                          <div class="product-details">
+                            <a href="#" title="移除此商品" class="remove-cart"><i class="icon-close"></i></a>
+                            <p class="product-name"><a href="#">商品1</a> </p>
+                            <strong>1</strong> x <span class="price">¥20.00</span>
+                          </div>
+                        </li>
+                        <li class="item even">
+                          <a href="#" title="产品" class="product-image"><img src="images/products/img08.jpg"
+                              alt="Lorem ipsum dolor" width="65"></a>
+                          <div class="product-details">
+                            <a href="#" title="移除此商品" class="remove-cart"><i class="icon-close"></i></a>
+                            <p class="product-name"><a href="#">商品2</a> </p>
+                            <strong>1</strong> x <span class="price">¥230.00</span>
+                          </div>
+                        </li>
+                        <li class="item last odd">
+                          <a href="#" title="产品" class="product-image"><img src="images/products/img10.jpg"
+                              alt="Lorem ipsum dolor" width="65"></a>
+                          <div class="product-details">
+                            <a href="#" title="移除此商品" class="remove-cart"><i class="icon-close"></i></a>
+                            <p class="product-name"><a href="#">商品3</a> </p>
+                            <strong>2</strong> x <span class="price">¥420.00</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="top-subtotal">小计：<span class="price">¥520.00</span></div>
+                      <div class="actions">
+                        <button onclick="location.href='#'" class="btn-checkout" type="button"><i
+                            class="fa fa-check"></i><span>去结账</span></button>
+                        <button onclick="location.href='shopping_cart.html'" class="view-cart" type="button"><i
+                            class="fa fa-shopping-cart"></i> <span>查看购物车</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+    </header>
+    <!-- 结束 header -->
+
+    <!-- 开始 Menu Area -->
+    <div class="menu-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 hidden-xs">
+            <div class="main-menu">
+              <nav>
+                <!-- 定义一个无序列表 -->
+                <ul>
+
+                  <!-- 列表项：主页 -->
+                  <li class="active custom-menu"><a href="index.html">主页</a>
+                  </li>
+
+                  <!-- 列表项：男装 -->
+                  <li class="megamenu"><a href="#">男装</a>
+
+                    <!-- 列表项下拉菜单：男装分类 -->
+                    <div class="mega-menu">
+                      <span>
+                        <!-- 男装分类：服装 -->
+                        <a class="mega-title" href="#">服装 </a>
+                        <a href="#">休闲衬衫</a>
+                        <a href="#">裤子</a>
+                        <a href="#">西装 & 西装外套 </a>
+                        <a href="#">运动服 </a>
+                      </span>
+                      <span>
+                        <!-- 男装分类：鞋子 -->
+                        <a class="mega-title" href="#">鞋子 </a>
+                        <a href="#">运动 & 户外</a>
+                        <a href="#">慢跑鞋</a>
+                        <a href="#">运动鞋 </a>
+                        <a href="#">正式鞋 </a>
+                      </span>
+                      <!-- 男装分类：配饰 -->
+                      <span>
+                        <a class="mega-title" href="#">配饰 </a>
+                        <a href="#">手提包</a>
+                        <a href="#">太阳镜</a>
+                        <a href="#">钱包 </a>
+                        <a href="#">背包 </a>
+                      </span>
+
+                    </div>
+                  </li>
+
+                  <!-- 列表项：女装 -->
+                  <li class="megamenu"><a href="#">女装</a>
+
+                    <!-- 列表项下拉菜单：女装分类 -->
+                    <div class="mega-menu">
+
+                      <!-- 女装分类：服装 -->
+                      <span class="mega-menu-img left hidden-sm">
+                        <a href="#"><img src="images/menu-img2.jpg" alt="Bannar 2"></a>
+                      </span>
+                      <span>
+                        <a class="mega-title" href="#">服装 </a>
+                        <a href="#">休闲衬衫</a>
+                        <a href="#">裤子</a>
+                        <a href="#">西装 & 西装外套 </a>
+                        <a href="#">运动服 </a>
+                      </span>
+
+                      <!-- 女装分类：珠宝 -->
+                      <span>
+                        <a class="mega-title" href="#">珠宝 </a>
+                        <a href="#">金</a>
+                        <a href="#">铂金</a>
+                        <a href="#">戒指 </a>
+                        <a href="#">项链 </a>
+                      </span>
+
+                      <!-- 女装分类：鞋子 -->
+                      <span>
+                        <a class="mega-title" href="#">鞋子 </a>
+                        <a href="#">运动 & 户外</a>
+                        <a href="#">慢跑鞋</a>
+                        <a href="#">运动鞋 </a>
+                        <a href="#">正式鞋 </a>
+                      </span>
+
+
+                      <!-- 女装分类：配饰 -->
+                      <span>
+                        <a class="mega-title" href="#">配饰 </a>
+                        <a href="#">手提包</a>
+                        <a href="#">太阳镜</a>
+                        <a href="#">钱包 </a>
+                        <a href="#">背包 </a>
+                      </span>
+
+                    </div>
+                  </li>
+                  <li><a href="#">联系我</a></li>
+                </ul>
+              </nav>
+              <!-- Signup -->
+              <p class="top-Signup"><a href="#" class="" role="button" data-toggle="modal"
+                  data-target="#login-modal">登录/注册</a></p>
+              <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true"
+                style="display: none;">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header"> <img id="img_logo" src="images/logo.png" alt="logo">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                          class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+                    </div>
+                    <div id="div-forms">
+                      <form id="login-form">
+                        <div class="modal-body">
+                          <div id="div-login-msg"> <span id="text-login-msg">用户名或电子邮件地址 </span> </div>
+                          <input id="login_username" class="form-control" type="text" placeholder="用户名" required>
+                          <input id="login_password" class="form-control" type="password" placeholder="密码" required>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox">
+                              记住我 </label>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <div>
+                            <button type="submit" class="btn-login">登录</button>
+                          </div>
+                          <div>
+                            <button onclick="location.href='account_page.html'" id="login_register_btn" type="button"
+                              class="btn btn-link">注册</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 结束 # MODAL LOGIN -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 结束 Menu Area -->
+
+    <!-- 开始 Mobile Menu -->
+    <div class="mobile-menu hidden-sm hidden-md hidden-lg">
+      <nav><span class="mobile-menu-title">菜单</span>
+        <ul>
+          <li class=""><a href="index.html">首页</a>
+          </li>
+          <li class=""><a href="#">女装</a>
+          <li class=""><a href="#">男装</a>
+        </ul>
+        </li>
+      </nav>
+    </div>
+    <!-- 结束 Mobile Menu -->
+
+    <!-- Main Slider Area -->
+    <div class="main-slider-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-xs-12">
+            <!-- 主轮播图 -->
+            <div class="main-slider">
+              <div class="slider">
+                <div id="mainSlider" class="nivoSlider slider-image">
+                  <img src="images/slider/slider-img1.jpg" alt="主轮播图" title="#htmlcaption1" />
+                  <img src="images/slider/slider-img2.jpg" alt="主轮播图" title="#htmlcaption2" />
+                </div>
+                <!-- 第一个轮播图标题 -->
+                <div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
+                  <div class="slider-progress"></div>
+                  <div class="slide-text">
+                    <div class="middle-text">
+                      <div class="cap-dec">
+                        <h1 class="cap-dec wow rubberBand" data-wow-duration="1.1s" data-wow-delay="0s">时尚</h1>
+                        <h2 class="cap-dec wow rubberBand" data-wow-duration="1.3s" data-wow-delay="0s">促销2022</h2>
+                        <p class="cap-dec wow rubberBand" data-wow-duration="1.5s" data-wow-delay="0s">高达35%的折扣</p>
+                      </div>
+                      <div class="cap-readmore wow rubberBand" data-wow-duration=".9s" data-wow-delay=".5s">
+                        <a href="#">立即购买</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 第二个轮播图标题 -->
+                <div id="htmlcaption2" class="nivo-html-caption slider-caption-2">
+                  <div class="slider-progress"></div>
+                  <div class="slide-text slide-text-2">
+                    <div class="middle-text">
+                      <div class="cap-dec">
+                        <h1 class="wow swing" data-wow-duration="1.1s" data-wow-delay="0s">真正</h1>
+                        <h2 class="wow swing" data-wow-duration="1.1s" data-wow-delay="0s">折扣</h2>
+                        <p class="wow swing" data-wow-duration="1.3s" data-wow-delay="0s">全新设计系列</p>
+                      </div>
+                      <div class="cap-readmore wow swing" data-wow-duration="1.3s" data-wow-delay=".3s">
+                        <a href="#">点击购买</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 结束主轮播图 -->
+
+
+            <!-- 服务部分 -->
+            <div class="jtv-service-area">
+              <div class="row">
+                <div class="col col-md-4 col-sm-4 col-xs-12">
+                  <div class="block-wrapper ship">
+                    <div class="text-des">
+                      <i class="fa fa-truck"></i>
+                      <h3>免费送货</h3>
+                      <p>订单金额超过 ¥199.00 即可享受免费送货服务</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-md-4 col-sm-4 col-xs-12 ">
+                  <div class="block-wrapper return">
+                    <div class="text-des">
+                      <i class="fa fa-dollar"></i>
+                      <h3>退款保证</h3>
+                      <p>30 天内可申请退款，保障您的权益。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-md-4 col-sm-4 col-xs-12">
+                  <div class="block-wrapper support">
+                    <div class="text-des">
+                      <i class="fa fa-gift"></i>
+                      <h3>特殊促销</h3>
+                      <p>所有商品享受高达 25% 的折扣</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- 结束 Main Slider Area -->
+
+    <!-- main container -->
+
+    <div class="main-container col2-left-layout">
+      <div class="container">
+        <div class="row">
+          <div class="col-main col-md-9 col-sm-8 col-xs-12 col-sm-push-4 col-md-push-3">
+            <!-- Home Tabs  -->
+
+            <div class="home-tab">
+              <div class="tab-info">
+                <h3 class="new-product-title pull-left">产品分类</h3>
+                <ul class="nav home-nav-tabs home-product-tabs">
+                  <li class="active"><a href="#all" data-toggle="tab" aria-expanded="false">全部</a></li>
+                  <li> <a href="#women" data-toggle="tab" aria-expanded="false">女装</a> </li>
+                  <li> <a href="#men" data-toggle="tab" aria-expanded="false">男装</a> </li>
+                </ul>
+                <!-- /.nav-tabs -->
+              </div>
+              <div id="productTabContent" class="tab-content">
+                <div class="tab-pane active in" id="all">
+                  <div class="slider-items-products">
+                    <div id="all-slider" class="product-flexslider hidden-buttons">
+                      <div class="slider-items slider-width-col4">
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="icon-sale-label sale-left">Sale</div>
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img01.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥125.00</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>愿望单</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img02.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥175.88</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="icon-new-label new-left">new</div>
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img03.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                      <div class="price-box">
+                                        <p class="special-price"> <span class="price-label">Special Price</span> <span
+                                            class="price"> ¥299.00 </span> </p>
+                                        <p class="old-price"> <span class="price-label">Regular Price:</span> <span
+                                            class="price"> ¥399.00 </span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img04.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥125.99</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img05.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box">
+                                        <p class="special-price"> <span class="price-label">Special Price</span> <span
+                                            class="price"> ¥188.80 </span> </p>
+                                        <p class="old-price"> <span class="price-label">Regular Price:</span> <span
+                                            class="price"> ¥299.00 </span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="women">
+                  <div class="slider-items-products">
+                    <div id="women-slider" class="product-flexslider hidden-buttons">
+                      <div class="slider-items slider-width-col4">
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="icon-sale-label sale-left">Sale</div>
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img06.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥125.00</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img07.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥175.88</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="icon-new-label new-left">new</div>
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img08.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                      <div class="price-box">
+                                        <p class="special-price"> <span class="price-label">Special Price</span> <span
+                                            class="price"> ¥299.00 </span> </p>
+                                        <p class="old-price"> <span class="price-label">Regular Price:</span> <span
+                                            class="price"> ¥399.00 </span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img09.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥125.99</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img10.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box">
+                                        <p class="special-price"> <span class="price-label">Special Price</span> <span
+                                            class="price"> ¥188.80 </span> </p>
+                                        <p class="old-price"> <span class="price-label">Regular Price:</span> <span
+                                            class="price"> ¥299.00 </span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="men">
+                  <div class="slider-items-products">
+                    <div id="men-slider" class="product-flexslider hidden-buttons">
+                      <div class="slider-items slider-width-col4">
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="icon-sale-label sale-left">Sale</div>
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img11.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥125.00</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img12.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥175.88</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="icon-new-label new-left">new</div>
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img13.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                      <div class="price-box">
+                                        <p class="special-price"> <span class="price-label">Special Price</span> <span
+                                            class="price"> ¥299.00 </span> </p>
+                                        <p class="old-price"> <span class="price-label">Regular Price:</span> <span
+                                            class="price"> ¥399.00 </span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img14.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥125.99</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img15.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box">
+                                        <p class="special-price"> <span class="price-label">Special Price</span> <span
+                                            class="price"> ¥188.80 </span> </p>
+                                        <p class="old-price"> <span class="price-label">Regular Price:</span> <span
+                                            class="price"> ¥299.00 </span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="kids">
+                  <div class="slider-items-products">
+                    <div id="kids-slider" class="product-flexslider hidden-buttons">
+                      <div class="slider-items slider-width-col4">
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="icon-sale-label sale-left">Sale</div>
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img16.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥125.00</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img17.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥175.88</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="icon-new-label new-left">new</div>
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img18.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                      <div class="price-box">
+                                        <p class="special-price"> <span class="price-label">Special Price</span> <span
+                                            class="price"> ¥299.00 </span> </p>
+                                        <p class="old-price"> <span class="price-label">Regular Price:</span> <span
+                                            class="price"> ¥399.00 </span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img19.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box"> <span class="regular-price"> <span
+                                            class="price">¥125.99</span> </span> </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                              <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                                  src="images/products/img20.jpg" alt=""></a>
+                            </div>
+                            <div class="pro-box-info">
+                              <div class="item-info">
+                                <div class="info-inner">
+                                  <div class="item-title"> <a title="产品" href="single_product.html">产品 </a> </div>
+                                  <div class="item-content">
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                    <div class="item-price">
+                                      <div class="price-box">
+                                        <p class="special-price"> <span class="price-label">Special Price</span> <span
+                                            class="price"> ¥188.80 </span> </p>
+                                        <p class="old-price"> <span class="price-label">Regular Price:</span> <span
+                                            class="price"> ¥299.00 </span> </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box-hover">
+                                <div class="product-item-actions">
+                                  <div class="pro-actions">
+                                    <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                    </button>
+                                  </div>
+                                  <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                      class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a>
+                                    <a href="#" class="action add-to-compare" title="Add to Compare">
+                                      <span>Compare</span> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 横幅块 -->
+            <div class="jtv-banner-block ">
+              <div class="jtv-subbanner1"><a href="#"><img class="img-respo" alt="jtv-subbanner1"
+                    src="images/banner4.jpg"></a>
+                <div class="text-block wow animated fadeInLeft animated">
+                  <div class="text1"><a href="#">衣服出售</a></div>
+                  <div class="text2"><a href="#">优雅女性风格</a></div>
+                  <div class="text3"><a href="#">享受8折优惠</a></div>
+                </div>
+              </div>
+              <div class="jtv-subbanner2"><a href="#"><img class="img-respo" alt="jtv-subbanner2"
+                    src="images/banner5.jpg"></a>
+                <div class="text-block wow animated fadeInLeft animated">
+                  <div class="text1"><a href="#">休闲装</a></div>
+                  <div class="text2"><a href="#">搭配新款模特</a></div>
+                  <div class="text3"><a href="#">马上购买</a></div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- prom banner-->
+
+            <!-- Featured Products -->
+
+            <!-- 新闻 开始 -->
+            <div id="latest-news" class="news">
+              <div class="page-header">
+                <h2>新闻</h2>
+              </div>
+              <div class="slider-items-products">
+                <div id="latest-news-slider" class="product-flexslider hidden-buttons">
+                  <div class="slider-items slider-width-col6">
+
+                    <!-- Item -->
+                    <div class="item">
+                      <div class="jtv-blog">
+                        <div class="blog-img"> <a href="#"> <img class="primary-img" src="images/blog-img1.jpg"
+                              alt=""></a> <span class="moretag"></span> </div>
+                        <div class="blog-content-jtv">
+                          <h2><a href="#">标题</a></h2>
+                          <span><i class="fa fa-calendar"></i>12月, 6, 2022</span><span class="blog-likes"><i
+                              class="fa fa-thumbs-up"></i>666</span> <span class="blog-comments"><i
+                              class="fa fa-comment"></i>10</span>
+                          <p>示例,内容不知道填什么</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 结束 Item -->
+                    <div class="item">
+                      <div class="jtv-blog">
+                        <div class="blog-img"> <a href="#"><img class="primary-img" src="images/blog-img2.jpg"
+                              alt=""></a> </div>
+                        <div class="blog-content-jtv">
+                          <h2><a href="#">标题</a></h2>
+                          <span><i class="fa fa-calendar"></i>12月, 6, 2022</span><span class="blog-likes"><i
+                              class="fa fa-thumbs-up"></i>666</span> <span class="blog-comments"><i
+                              class="fa fa-comment"></i>10</span>
+                          <p>示例,内容不知道填什么</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="item">
+                      <div class="jtv-blog">
+                        <div class="blog-img"> <a href="#"><img class="primary-img" src="images/blog-img3.jpg"
+                              alt=""></a> </div>
+                        <div class="blog-content-jtv">
+                          <h2><a href="#">标题</a></h2>
+                          <span><i class="fa fa-calendar"></i>12月, 6, 2022</span><span class="blog-likes"><i
+                              class="fa fa-thumbs-up"></i>666</span> <span class="blog-comments"><i
+                              class="fa fa-comment"></i>10</span>
+                          <p>示例,内容不知道填什么</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 结束 Item -->
+
+                    <!-- Item -->
+                    <div class="item">
+                      <div class="jtv-blog">
+                        <div class="blog-img"> <a href="#"> <img class="primary-img" src="images/blog-img1.jpg"
+                              alt=""></a> <span class="moretag"></span> </div>
+                        <div class="blog-content-jtv">
+                          <h2><a href="#">标题</a></h2>
+                          <span><i class="fa fa-calendar"></i>12月, 6, 2022</span><span class="blog-likes"><i
+                              class="fa fa-thumbs-up"></i>666</span> <span class="blog-comments"><i
+                              class="fa fa-comment"></i>10</span>
+                          <p>示例,内容不知道填什么</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 结束 Item -->
+
+                    <!-- Item -->
+                    <div class="item">
+                      <div class="jtv-blog">
+                        <div class="blog-img"> <a href="#"> <img class="primary-img" src="images/blog-img3.jpg"
+                              alt=""></a> <span class="moretag"></span> </div>
+                        <div class="blog-content-jtv">
+                          <h2><a href="#">标题</a></h2>
+                          <span><i class="fa fa-calendar"></i>12月, 6, 2022</span><span class="blog-likes"><i
+                              class="fa fa-thumbs-up"></i>666</span> <span class="blog-comments"><i
+                              class="fa fa-comment"></i>10</span>
+                          <p>示例,内容不知道填什么</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 结束 Item -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="sidebar col-md-3 col-sm-4 col-xs-12 col-sm-pull-8 col-md-pull-9">
+            <div class="best-sale-product">
+              <div class="sidebar-bar-title">
+                <h3>本周最热</h3>
+              </div>
+              <div class="block-content">
+                <div class="slider-items-products">
+                  <div id="best-sale-slider" class="product-flexslider hidden-buttons">
+                    <div class="slider-items slider-width-col4">
+                      <div class="product-item">
+                        <div class="best-sale-item">
+                          <div class="products-block-left"> <a href="single_product.html" title="样品"
+                              class="product-image"><img src="images/products/img15.jpg" alt="样品 "></a>
+                          </div>
+                          <div class="products-block-right">
+                            <p class="product-name"> <a href="single_product.html">产品</a>
+                            </p>
+                            <span class="price">¥19.99</span>
+                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
+                          </div>
+                        </div>
+                        <div class="best-sale-item">
+                          <div class="products-block-left"> <a href="single_product.html" title="样品"
+                              class="product-image"><img src="images/products/img14.jpg" alt="样品 "></a>
+                          </div>
+                          <div class="products-block-right">
+                            <p class="product-name"> <a href="single_product.html">产品</a> </p>
+                            <span class="price">¥89.99</span>
+                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                          </div>
+                        </div>
+                        <div class="best-sale-item">
+                          <div class="products-block-left"> <a href="single_product.html" title="样品"
+                              class="product-image"><img src="images/products/img13.jpg" alt="样品 "></a>
+                          </div>
+                          <div class="products-block-right">
+                            <p class="product-name"> <a href="single_product.html">产品</a> </p>
+                            <span class="price">¥89.99</span>
+                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                          </div>
+                        </div>
+                        <div class="best-sale-item">
+                          <div class="products-block-left"> <a href="single_product.html" title="样品"
+                              class="product-image"><img src="images/products/img12.jpg" alt="样品 "></a>
+                          </div>
+                          <div class="products-block-right">
+                            <p class="product-name"> <a href="single_product.html">产品</a> </p>
+                            <span class="price">¥89.99</span>
+                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-item">
+                        <div class="best-sale-item">
+                          <div class="products-block-left"> <a href="single_product.html" title="样品"
+                              class="product-image"><img src="images/products/img10.jpg" alt="样品 "></a>
+                          </div>
+                          <div class="products-block-right">
+                            <p class="product-name"> <a href="single_product.html">产品</a>
+                            </p>
+                            <span class="price">¥19.99</span>
+                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
+                          </div>
+                        </div>
+                        <div class="best-sale-item">
+                          <div class="products-block-left"> <a href="single_product.html" title="样品"
+                              class="product-image"><img src="images/products/img09.jpg" alt="样品 "></a>
+                          </div>
+                          <div class="products-block-right">
+                            <p class="product-name"> <a href="single_product.html">产品</a> </p>
+                            <span class="price">¥89.99</span>
+                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                          </div>
+                        </div>
+                        <div class="best-sale-item">
+                          <div class="products-block-left"> <a href="single_product.html" title="样品"
+                              class="product-image"><img src="images/products/img08.jpg" alt="样品 "></a>
+                          </div>
+                          <div class="products-block-right">
+                            <p class="product-name"> <a href="single_product.html">产品</a> </p>
+                            <span class="price">¥89.99</span>
+                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                          </div>
+                        </div>
+                        <div class="best-sale-item">
+                          <div class="products-block-left"> <a href="single_product.html" title="样品"
+                              class="product-image"><img src="images/products/img07.jpg" alt="样品 "></a>
+                          </div>
+                          <div class="products-block-right">
+                            <p class="product-name"> <a href="single_product.html">产品</a> </p>
+                            <span class="price">¥89.99</span>
+                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Hot deal -->
+            <div class="hot-products">
+              <div class="hot-deal"> <span class="title-text">热销商品</span>
+                <ul class="products-grid">
+                  <li class="item">
+                    <div class="product-item">
+                      <div class="item-inner">
+                        <div class="product-thumbnail">
+                          <div class="icon-hot-label hot-right">Hot</div>
+                          <div class="btn-quickview"> <a href="#"><span>快速查看</span></a></div>
+                          <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo"
+                              src="images/products/img01.jpg" alt=""></a>
+                          <div class="jtv-box-timer">
+                            <div class="countbox_1 jtv-timer-grid"></div>
+                          </div>
+                        </div>
+                        <div class="pro-box-info">
+                          <div class="item-info">
+                            <div class="info-inner">
+                              <div class="item-title"> <a title="产品" href="single_product.html">产品</a> </div>
+                              <div class="item-content">
+                                <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                    class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+                                </div>
+                                <div class="item-price">
+                                  <div class="price-box"> <span class="regular-price"> <span
+                                        class="price">¥125.00</span> </span> </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-hover">
+                            <div class="product-item-actions">
+                              <div class="pro-actions">
+                                <button class="action add-to-cart" type="button" title="加入购物车"> <span>加入购物车</span>
+                                </button>
+                              </div>
+                              <div class="add-to-links" data-role="add-to-links"> <a href="#"
+                                  class="action add-to-wishlist" title="Add to Wishlist"> <span>Wishlist</span> </a> <a
+                                  href="#" class="action add-to-compare" title="Add to Compare">
+                                  <span>Compare</span> </a> </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-service">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <div class="bottom-service-box">
+            <div class="box-outer">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <div class="service-box-center"> <span class="bottom-service-title">买2件商品</span>
+                  <div class="description">
+                    <div class="heading">免费获得1件商品！</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column">
+                <div class="service-box-center"> <span class="bottom-service-title">每日促销</span>
+                  <div class="description">
+                    <div class="heading">今日高达45%的折扣！</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column">
+                <div class="service-box-center"> <span class="bottom-service-title">新品上市</span>
+                  <div class="description">
+                    <div class="heading">高达75%的折扣</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column">
+                <div class="service-box-center"> <span class="bottom-service-title">高达45%的折扣</span>
+                  <div class="description">
+                    <div class="heading">你的第一笔购买</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <!-- 电子报订阅表单 -->
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-3">
+              <!-- 底部 logo -->
+              <div class="footer-logo"><a href="index.html"><img src="images/logo.png" alt="底部 logo"></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <h3 class="">订阅</h3>
+              <span>获取最新的优惠信息和特别优惠</span>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <!-- 订阅表单 -->
+              <form id="newsletter-validate-detail" method="post" action="#">
+                <div class="newsletter-inner">
+                  <input class="newsletter-email" name='Email' placeholder='输入您的电子邮件' />
+                  <button class="button subscribe" type="submit" title="订阅">订阅</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- 一个列表组件，包含多个链接 -->
+        <div class="row">
+          <div class="col-sm-6 col-md-3 col-xs-12 col-lg-3 collapsed-block">
+            <div class="footer-links">
+              <h3 class="links-title">信息<a class="expander visible-xs" href="#">+</a></h3>
+              <div class="tabBlock" id="TabBlock-1">
+                <ul class="list-links list-unstyled">
+                  <li><a href="#">交货信息</a></li>
+                  <li><a href="#">折扣</a></li>
+                  <li><a href="#">网站地图</a></li>
+                  <li><a href="#">隐私政策</a></li>
+                  <li><a href="#">常见问题</a></li>
+                  <li><a href="#">条款和条件</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-xs-12 col-lg-3 collapsed-block">
+            <div class="footer-links">
+              <h3 class="links-title">内部链接<a class="expander visible-xs" href="#">+</a></h3>
+              <div class="tabBlock" id="TabBlock-3">
+                <ul class="list-links list-unstyled">
+                  <li> <a href="#"> 网站地图 </a> </li>
+                  <li> <a href="#">新闻</a> </li>
+                  <li> <a href="#">趋势</a> </li>
+                  <li> <a href="#">关于我们</a> </li>
+                  <li> <a href="#">联系我们</a> </li>
+                  <li> <a href="#">我的订单</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-2 col-xs-12 col-lg-3 collapsed-block">
+            <div class="footer-links">
+              <h3 class="links-title">服务<a class="expander visible-xs" href="#">+</a></h3>
+              <div class="tabBlock" id="TabBlock-4">
+                <ul class="list-links list-unstyled">
+                  <li> <a href="#">账户</a> </li>
+                  <li> <a href="#">愿望列表</a> </li>
+                  <li> <a href="shopping_cart.html">购物车</a> </li>
+                  <li> <a href="#">退货政策</a> </li>
+                  <li> <a href="#">概况</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xs-12 col-lg-3">
+            <h3 class="links-title">联系我们</h3>
+            <div class="footer-content">
+              <div class="email"> <i class="fa fa-envelope"></i>
+                <p>799310451@qq.com</p>
+              </div>
+              <div class="phone"> <i class="fa fa-phone"></i>
+                <p>(000) 0123 456 789</p>
+              </div>
+              <div class="address"> <i class="fa fa-map-marker"></i>
+                <p> 地址:兴义民族师范学院笔山二栋1403 </p>
+              </div>
+            </div>
+            <div class="social">
+              <ul class="inline-mode">
+                <li class="social-network fb"><a title="在Facebook上连接我们" target="_blank" href="#"><i
+                      class="fa fa-facebook"></i></a></li>
+                <li class="social-network googleplus"><a title="在Google+上连接我们" target="_blank" href="#"><i
+                      class="fa fa-google-plus"></i></a></li>
+                <li class="social-network tw"><a title="在Twitter上连接我们" target="_blank" href="#"><i
+                      class="fa fa-twitter"></i></a></li>
+                <li class="social-network linkedin"><a title="在Linkedin上连接我们" target="_blank" href="#"><i
+                      class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-coppyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 coppyright">大作业 &copy; 2022年12月完成.
+            </div>
+          </div>
+        </div>
+    </footer>
+    <a href="#" class="totop"> </a>
+  </div>
+  <!-- 结束 Footer -->
+
+  <!-- JS -->
+
+  <!-- jquery js -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- Mean Menu js -->
+  <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
+
+  <!-- owl.carousel.min js -->
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+  <!-- bxslider js -->
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+
+  <!--jquery-ui.min js -->
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+
+  <!-- countdown js -->
+  <script type="text/javascript" src="js/countdown.js"></script>
+
+  <!-- wow JS -->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+
+  <!-- main js -->
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <!-- nivo slider js -->
+  <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+  <!-- flexslider js -->
+  <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+  <!-- 热销倒计时 -->
+  <script type="text/javascript">
+    var dthen1 = new Date("12/12/22 11:59:00 PM");
+    start = "12/06/22 03:02:11 AM";
+    start_date = Date.parse(start);
+    var dnow1 = new Date(start_date);
+    if (CountStepper > 0)
+      ddiff = new Date((dnow1) - (dthen1));
+    else
+      ddiff = new Date((dthen1) - (dnow1));
+    gsecs1 = Math.floor(ddiff.valueOf() / 1000);
+
+    var iid1 = "countbox_1";
+    CountBack_slider(gsecs1, "countbox_1", 1);
+  </script>
+</body>
+
+</html>
